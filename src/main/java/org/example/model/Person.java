@@ -6,7 +6,16 @@ public class Person {
     private String lastName;
     private  String email;
     private int age;
-    private boolean status;
+    private String nationality;
+
+    public Person(String firstName, String lastName,String email, int age, String nationality){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.age = age;
+        this.nationality = nationality;
+    }
+
 
 public String getFirstName(){
 
@@ -29,11 +38,11 @@ public int getAge(){
 public void setAge(int Age){
     this.age = age;
 }
-public String getStatus(){
-    return getStatus();
+public String getNationality(){
+    return getNationality();
 }
-public void setStatus(){
-    this.status = status;
+public void setNationality(){
+    this.nationality = nationality;
 }
 
     @Override
@@ -43,7 +52,7 @@ public void setStatus(){
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
                 ", age=" + age +
-                ", status=" + status +
+                ", status=" + nationality +
                 '}';
     }
 }
